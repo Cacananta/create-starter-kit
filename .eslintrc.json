@@ -1,0 +1,20 @@
+{
+  "root": true, //prevents any parent folder's eslint file from overriding this
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 0 //0 off, 1 warn, 2 err. 2 will break script
+  }
+}
